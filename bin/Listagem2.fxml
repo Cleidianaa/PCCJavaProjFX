@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Listagem2">
+   <children>
+      <ImageView fitHeight="87.0" fitWidth="158.0" layoutX="-9.0">
+         <image>
+            <Image url="@../../../../Users/tatia/OneDrive/Desktop/PCC/Arquivos%20Charmant/Logo%20Charmant.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="162.0" layoutY="32.0" text="Controle de Estoque">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnEntradaMercadoria" layoutX="78.0" layoutY="369.0" mnemonicParsing="false" onAction="#AcaoEntradaMercadoria" prefHeight="38.0" prefWidth="170.0" text="Entrada de Mercadoria" textAlignment="CENTER" textFill="#e40c58" textOverrun="CLIP">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSaidaMercadoria" layoutX="270.0" layoutY="369.0" mnemonicParsing="false" onAction="#AcaoSaidaMercadoria" prefHeight="38.0" prefWidth="170.0" text="Saída de Mercadoria" textAlignment="CENTER" textFill="#e40c58" textOverrun="CLIP">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnVoltarPaginaInicial" layoutX="270.0" layoutY="418.0" mnemonicParsing="false" onAction="#AcaoVoltarPaginaInicial" prefHeight="38.0" prefWidth="170.0" text="Página Anterior" textAlignment="CENTER" textFill="#e40c58" textOverrun="CLIP">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCadastroProduto" layoutX="78.0" layoutY="418.0" mnemonicParsing="false" onAction="#AcaoCadastroProduto" prefHeight="38.0" prefWidth="170.0" text="Cadastro de Produto" textAlignment="CENTER" textFill="#e40c58" textOverrun="CLIP">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAlterar" layoutX="173.0" layoutY="322.0" mnemonicParsing="false" onAction="#AcaoAlterar" prefHeight="38.0" prefWidth="170.0" text="Alterar" textAlignment="CENTER" textFill="#e40c58" textOverrun="CLIP">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSair" layoutX="270.0" layoutY="466.0" mnemonicParsing="false" onAction="#AcaoSair" prefHeight="38.0" prefWidth="170.0" text="Sair" textAlignment="CENTER" textFill="#e40c58" textOverrun="CLIP">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnImprimir" layoutX="78.0" layoutY="466.0" mnemonicParsing="false" onAction="#AcaoImprimir" prefHeight="38.0" prefWidth="170.0" text="Imprimir" textAlignment="CENTER" textFill="#e40c58" textOverrun="CLIP">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Group layoutX="331.0" layoutY="185.0" />
+      <Group layoutX="87.0" layoutY="134.0" />
+      <Label layoutX="404.0" layoutY="104.0" text="Valor Total" />
+      <ListView fx:id="lvCodProduto" layoutX="35.0" layoutY="122.0" prefHeight="174.0" prefWidth="70.0" />
+      <ListView fx:id="lvDescricao" layoutX="105.0" layoutY="122.0" prefHeight="174.0" prefWidth="146.0" />
+      <ListView fx:id="lvQuantidade" layoutX="248.0" layoutY="122.0" prefHeight="174.0" prefWidth="78.0" />
+      <ListView fx:id="lvValorTotal" layoutX="390.0" layoutY="122.0" prefHeight="174.0" prefWidth="85.0" />
+      <ListView fx:id="lvValor" layoutX="320.0" layoutY="122.0" prefHeight="174.0" prefWidth="70.0" />
+      <Label layoutX="42.0" layoutY="104.0" text="Cod. Prod." />
+      <Label layoutX="152.0" layoutY="104.0" text="Descrição" />
+      <Label layoutX="252.0" layoutY="104.0" text="Quantidade" />
+      <Label layoutX="341.0" layoutY="104.0" text="Valor" />
+      <Label layoutX="227.0" layoutY="67.0" text="Listagem">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

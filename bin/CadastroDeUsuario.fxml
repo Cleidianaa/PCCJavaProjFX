@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CadastroUsuario">
+   <children>
+      <ImageView fitHeight="87.0" fitWidth="158.0" layoutX="-9.0">
+         <image>
+            <Image url="@Logo%20Charmant.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="194.0" layoutY="56.0" text="Configurações">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="130.0" prefHeight="27.0" prefWidth="50.0" text="Nome " textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="175.0" prefHeight="27.0" prefWidth="50.0" text="Senha">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="121.0" layoutY="298.0" prefHeight="27.0" prefWidth="146.0" text="Ent. de Mercadoria">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="113.0" layoutY="262.0" prefHeight="27.0" prefWidth="179.0" text="Cadastro de Produto" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSalvarCadastro" layoutX="196.0" layoutY="398.0" mnemonicParsing="false" onAction="#AcaoSalvarCadastro" prefHeight="37.0" prefWidth="146.0" text="Salvar" textFill="#e40c58">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="115.0" layoutY="334.0" prefHeight="27.0" prefWidth="158.0" text="Saída de Mercadoria">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnVoltarPaginaInicial" layoutX="196.0" layoutY="451.0" mnemonicParsing="false" onAction="#AcaoVoltarPaginaInicial" prefHeight="37.0" prefWidth="146.0" text="Página Anterior" textFill="#e40c58">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="220.0" layoutY="212.0" text="Permissões">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsuario" layoutX="157.0" layoutY="125.0" prefHeight="38.0" prefWidth="278.0" />
+      <TextField fx:id="txtSenha" layoutX="158.0" layoutY="170.0" prefHeight="38.0" prefWidth="278.0" />
+      <CheckBox fx:id="cbCadastroProduto" layoutX="325.0" layoutY="267.0" mnemonicParsing="false" />
+      <CheckBox fx:id="cbEntradaMercadoria" layoutX="327.0" layoutY="303.0" mnemonicParsing="false" />
+      <CheckBox fx:id="cbSaidaMercadoria" layoutX="327.0" layoutY="339.0" mnemonicParsing="false" />
+      <Label layoutX="178.0" layoutY="87.0" text="Cadastro de Usuário">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
