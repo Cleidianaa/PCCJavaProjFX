@@ -1,14 +1,15 @@
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javax.swing.JOptionPane;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.control.Button;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
-import javafx.scene.Node;
 
 public class PaginaInicial {
 
@@ -35,29 +36,27 @@ public class PaginaInicial {
 
     @FXML
     void AcaoEntrarConfiguracao(ActionEvent event) throws IOException {
-
         Raiz = FXMLLoader.load(getClass().getResource("CadastroDeUsuario.fxml"));
-
         Palco = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        Cena = new Scene(Raiz);
-
-        Palco.setScene(Cena);
-
-        Palco.show();
+        Usuario user = (Usuario) Palco.getUserData();
+        if(user.Admin){
+            Cena = new Scene(Raiz);
+            Palco.setScene(Cena);
+            Palco.show();
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "Usuário: " + user.Nome + " não tem permissão.");
+        }
     }
 
     @FXML
     void AcaoListagem(ActionEvent event) throws IOException {
 
-        Raiz = FXMLLoader.load(getClass().getResource("Listagem2.fxml"));
-
+        Raiz = FXMLLoader.load(getClass().getResource("Listagem.fxml"));
         Palco = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
         Cena = new Scene(Raiz);
-
         Palco.setScene(Cena);
-
         Palco.show();
     }
 
@@ -65,21 +64,20 @@ public class PaginaInicial {
     void AcaoSair(ActionEvent event) throws IOException {
 
         Raiz = FXMLLoader.load(getClass().getResource("Login.fxml"));
-
         Palco = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
         Cena = new Scene(Raiz);
-
         Palco.setScene(Cena);
-
         Palco.show();
     }
 
     @FXML
     void initialize() {
-        assert btnConfiguracao != null: "fx:id=\"btnConfiguracao\" was not injected: check your FXML file 'PaginaInicial.fxml'.";
-        assert btnListagem != null: "fx:id=\"btnListagem\" was not injected: check your FXML file 'PaginaInicial.fxml'.";
-        assert btnSairSistema != null: "fx:id=\"btnSairSistema\" was not injected: check your FXML file 'PaginaInicial.fxml'.";
+        assert btnConfiguracao != null
+                : "fx:id=\"btnConfiguracao\" was not injected: check your FXML file 'PaginaInicial.fxml'.";
+        assert btnListagem != null
+                : "fx:id=\"btnListagem\" was not injected: check your FXML file 'PaginaInicial.fxml'.";
+        assert btnSairSistema != null
+                : "fx:id=\"btnSairSistema\" was not injected: check your FXML file 'PaginaInicial.fxml'.";
 
     }
 

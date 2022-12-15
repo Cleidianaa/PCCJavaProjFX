@@ -1,17 +1,18 @@
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-import javafx.scene.Node;
-import javafx.fxml.FXMLLoader;
-import java.io.IOException;
+
 import javax.swing.JOptionPane;
 
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 public class CadastroDeProduto {
     private Stage Palco;
@@ -85,8 +86,10 @@ public class CadastroDeProduto {
             return;
         }
 
+        Produto produto = new Produto(codigoProduto, descricao, Integer.parseInt(quantidade), Double.parseDouble(valorUnt), observacoes);
+
         Database database = new Database();
-        boolean cadastrado = database.CadastrarProduto(codigoProduto, descricao, quantidade, valorUnt, observacoes);
+        boolean cadastrado = database.CadastrarProduto(produto);
 
         if(cadastrado){
             txtCodigoProduto.clear();
@@ -104,7 +107,7 @@ public class CadastroDeProduto {
     @FXML
     void AcaoVoltarPaginaInicial(ActionEvent event) throws IOException {
 
-        Raiz = FXMLLoader.load(getClass().getResource("Listagem2.fxml"));
+        Raiz = FXMLLoader.load(getClass().getResource("Listagem.fxml"));
         Palco = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Cena = new Scene(Raiz);
         Palco.setScene(Cena);
@@ -134,5 +137,4 @@ public class CadastroDeProduto {
         }
         return true;
     }
-
 }

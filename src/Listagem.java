@@ -2,23 +2,21 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
-
+import javax.swing.JOptionPane;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
 import javafx.stage.Stage;
-import javafx.scene.Node;
-import javax.swing.JOptionPane;
 
-
-public class Listagem2 {
+public class Listagem {
 
     private Stage Palco;
     private Scene Cena;
@@ -178,10 +176,10 @@ public class Listagem2 {
         PreencherLista();
 
         assert btnAlterar != null : "fx:id=\"btnAlterar\" was not injected: check your FXML file 'Listagem.fxml'.";
-        assert btnCadastroProduto != null : "fx:id=\"btnCadastroProduto\" was not injected: check your FXML file 'Listagem.fxml'.";
-        assert btnEntradaMercadoria != null: "fx:id=\"btnEntradaMercadoria\" was not injected: check your FXML file 'Listagem.fxml'.";
+        assert btnCadastroProduto != null  : "fx:id=\"btnCadastroProduto\" was not injected: check your FXML file 'Listagem.fxml'.";
+        assert btnEntradaMercadoria != null : "fx:id=\"btnEntradaMercadoria\" was not injected: check your FXML file 'Listagem.fxml'.";
         assert btnImprimir != null : "fx:id=\"btnImprimir\" was not injected: check your FXML file 'Listagem.fxml'.";
-        assert btnSaidaMercadoria != null : "fx:id=\"btnSaidaMercadoria\" was not injected: check your FXML file 'Listagem.fxml'.";
+        assert btnSaidaMercadoria != null  : "fx:id=\"btnSaidaMercadoria\" was not injected: check your FXML file 'Listagem.fxml'.";
         assert btnSair != null : "fx:id=\"btnSair\" was not injected: check your FXML file 'Listagem.fxml'.";
         assert btnVoltarPaginaInicial != null : "fx:id=\"btnVoltarPaginaInicial\" was not injected: check your FXML file 'Listagem.fxml'.";
 

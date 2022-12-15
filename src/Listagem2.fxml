@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Listagem2">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Listagem">
    <children>
       <ImageView fitHeight="87.0" fitWidth="158.0" layoutX="-9.0">
          <image>
@@ -46,12 +46,7 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Button fx:id="btnSair" layoutX="270.0" layoutY="466.0" mnemonicParsing="false" onAction="#AcaoSair" prefHeight="38.0" prefWidth="170.0" text="Sair" textAlignment="CENTER" textFill="#e40c58" textOverrun="CLIP">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnImprimir" layoutX="78.0" layoutY="466.0" mnemonicParsing="false" onAction="#AcaoImprimir" prefHeight="38.0" prefWidth="170.0" text="Imprimir" textAlignment="CENTER" textFill="#e40c58" textOverrun="CLIP">
+      <Button fx:id="btnSair" layoutX="174.0" layoutY="470.0" mnemonicParsing="false" onAction="#AcaoSair" prefHeight="38.0" prefWidth="170.0" text="Sair" textAlignment="CENTER" textFill="#e40c58" textOverrun="CLIP">
          <font>
             <Font size="14.0" />
          </font>
@@ -75,3 +70,4 @@
       </Label>
    </children>
 </AnchorPane>
+

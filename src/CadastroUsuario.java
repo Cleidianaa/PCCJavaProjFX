@@ -1,17 +1,17 @@
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javax.swing.JOptionPane;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.stage.Stage;
-import javafx.scene.Node;
-import javafx.fxml.FXMLLoader;
-import java.io.IOException;
-import javax.swing.JOptionPane;
+import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 public class CadastroUsuario {
     private Stage Palco;
@@ -68,8 +68,9 @@ public class CadastroUsuario {
             return;
         }
 
+        Usuario user = new Usuario(usuario, senha, cadastroProduto, entradaMercadoria, saidaMercadoria, false);
         Database database = new Database();
-        boolean cadastrado = database.CadastrarUsuario(usuario, senha, cadastroProduto, entradaMercadoria, saidaMercadoria);
+        boolean cadastrado = database.CadastrarUsuario(user);
 
         if(cadastrado){
             txtUsuario.clear();
