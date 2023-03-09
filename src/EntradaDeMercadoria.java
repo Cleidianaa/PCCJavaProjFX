@@ -1,17 +1,19 @@
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javax.swing.JOptionPane;
+import Modelos.Entrada;
+import Modelos.Produto;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.scene.Node;
+import javafx.fxml.FXMLLoader;
+import java.io.IOException;
 
 public class EntradaDeMercadoria {
     private Stage Palco;

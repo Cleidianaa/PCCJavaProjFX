@@ -1,12 +1,13 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import Modelos.Entrada;
+import Modelos.Produto;
+import Modelos.Saida;
+import Modelos.Usuario;
 
 public class Database {
+
     private static String usuarioDB = "root";
     private static String senhaDB = "Qwerty12";
 

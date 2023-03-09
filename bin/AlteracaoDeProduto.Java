@@ -11,8 +11,8 @@ import javafx.scene.Node;
 import javafx.fxml.FXMLLoader;
 import java.io.IOException;
 import javax.swing.JOptionPane;
-import Modelos.*;
 
+import Modelos.*;
 
 public class AlteracaoDeProduto {
     private Stage Palco;

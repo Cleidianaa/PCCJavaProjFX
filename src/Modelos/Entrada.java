@@ -1,5 +1,6 @@
 package Modelos;
 
+
 public class Entrada {
     public String NumeroFatura;
     public String DataFatura;

@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javax.swing.JOptionPane;
+import Modelos.Usuario;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -14,9 +15,7 @@ import javafx.stage.Stage;
 public class PaginaInicial {
 
     private Stage Palco;
-
     private Scene Cena;
-
     private Parent Raiz;
 
     @FXML
@@ -72,12 +71,9 @@ public class PaginaInicial {
 
     @FXML
     void initialize() {
-        assert btnConfiguracao != null
-                : "fx:id=\"btnConfiguracao\" was not injected: check your FXML file 'PaginaInicial.fxml'.";
-        assert btnListagem != null
-                : "fx:id=\"btnListagem\" was not injected: check your FXML file 'PaginaInicial.fxml'.";
-        assert btnSairSistema != null
-                : "fx:id=\"btnSairSistema\" was not injected: check your FXML file 'PaginaInicial.fxml'.";
+        assert btnConfiguracao != null: "fx:id=\"btnConfiguracao\" was not injected: check your FXML file 'PaginaInicial.fxml'.";
+        assert btnListagem != null : "fx:id=\"btnListagem\" was not injected: check your FXML file 'PaginaInicial.fxml'.";
+        assert btnSairSistema != null  : "fx:id=\"btnSairSistema\" was not injected: check your FXML file 'PaginaInicial.fxml'.";
 
     }
 
